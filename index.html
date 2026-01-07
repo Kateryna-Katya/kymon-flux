@@ -1,56 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/kymon-flux/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kymon Flux — Образовательная платформа</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
     <script type="module" crossorigin src="/kymon-flux/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/kymon-flux/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/kymon-flux/assets/styles-8BtOALOE.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__text">Kymon<span class="logo__accent">Flux</span></span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#about" class="nav__link">О платформе</a></li>
+        <li><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#education" class="nav__link">Обучение</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--secondary">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li><a href="#about" class="mobile-link">О платформе</a></li>
+    <li><a href="#benefits" class="mobile-link">Преимущества</a></li>
+    <li><a href="#innovations" class="mobile-link">Инновации</a></li>
+    <li><a href="#education" class="mobile-link">Обучение</a></li>
+    <li><a href="#contact" class="mobile-link btn btn--primary">Начать сейчас</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="hero__bg-glow"></div>
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge reveal">Технология нового поколения</div>
+            <h1 class="hero__title">
+                Инновации — это <br>
+                <span class="text-gradient" id="changing-text">просто</span>
+            </h1>
+            <p class="hero__subtitle reveal">Откройте новые возможности с Kymon Flux. Передовая цифровая инфраструктура
+                для обучения и масштабирования ваших идей.</p>
+            <div class="hero__btns reveal">
+                <a href="#contact" class="btn btn--primary">Начать сейчас <i data-lucide="arrow-right"></i></a>
+                <a href="#about" class="btn btn--outline">О платформе</a>
+            </div>
+        </div>
+        <div class="hero__viz reveal">
+            <div class="hero__circle-decor"></div>
+            <img src="/kymon-flux/assets/one-BfSQqw4L.jpg" alt="computer" class="hero__main-img">
+        </div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__img-box reveal">
+                <img src="/kymon-flux/assets/two-f8M9zfQk.jpg" alt="computer" class="parallax-img">
+                <div class="about__floating-card">
+                    <span class="count">10k+</span>
+                    <span class="label">Пользователей в ЕС</span>
+                </div>
+            </div>
+            <div class="about__text-box reveal">
+                <h2 class="section__title">Переосмыслите подход к <span class="logo__accent">развитию</span></h2>
+                <p>Мы создали платформу, где «сложно» превращается в «понятно». Это не просто обучение — это стратегия
+                    роста на базе инноваций, доступная уже сегодня в Италии и по всей Европе.</p>
+                <ul class="about__list">
+                    <li><i data-lucide="check-circle"></i> Решения, которые меняют правила игры</li>
+                    <li><i data-lucide="check-circle"></i> AI-инструменты для реальных задач</li>
+                    <li><i data-lucide="check-circle"></i> Быстрый и легкий старт</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__header reveal">
+            <h2 class="section__title">Ваши возможности <br>с Kymon Flux</h2>
+            <p>Практики, применимые уже сегодня для вашего пассивного дохода и карьеры.</p>
+        </div>
+        <div class="benefits__bento">
+            <div class="bento-card bento-card--large reveal">
+                <div class="bento-card__content">
+                    <i data-lucide="cpu"></i>
+                    <h3>Удобная адаптация</h3>
+                    <p>Легко разобраться без опыта. Пошаговый путь, понятный каждому пользователю.</p>
+                </div>
+                <div class="bento-card__bg"></div>
+            </div>
+            <div class="bento-card reveal">
+                <i data-lucide="globe"></i>
+                <h3>Доступность в ЕС</h3>
+                <p>Платформа уже доступна в Европе с полной поддержкой.</p>
+            </div>
+            <div class="bento-card reveal">
+                <i data-lucide="shield-check"></i>
+                <h3>Безопасность</h3>
+                <p>Методологии, доказавшие эффективность.</p>
+            </div>
+            <div class="bento-card bento-card--medium reveal">
+                <i data-lucide="trending-up"></i>
+                <h3>Пассивный доход</h3>
+                <p>Технология для создания устойчивого будущего и пассивного дохода.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section innovations" id="innovations">
+    <div class="container">
+        <h2 class="section__title text-center reveal">Технологии нового поколения</h2>
+        <div class="innovations__grid">
+            <div class="innov-card reveal">
+                <div class="innov-card__number">01</div>
+                <h3>AI-инструменты</h3>
+                <p>Решения, которые меняют правила игры и автоматизируют рутину.</p>
+            </div>
+            <div class="innov-card reveal active">
+                <div class="innov-card__number">02</div>
+                <h3>Цифровая среда</h3>
+                <p>Передовая цифровая инфраструктура для команд любого масштаба.</p>
+            </div>
+            <div class="innov-card reveal">
+                <div class="innov-card__number">03</div>
+                <h3>Data-подход</h3>
+                <p>Стратегия роста на базе инноваций и глубокой аналитики данных.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section education" id="education">
+    <div class="container education__container">
+        <div class="reveal">
+            <h2 class="section__title">Пошаговый путь, <br><span class="logo__accent">понятный каждому</span></h2>
+            <p>Мы превращаем сложные концепции в простые практики, применимые уже сегодня.</p>
+        </div>
+
+        <div class="accordion reveal">
+            <div class="accordion__item active">
+                <div class="accordion__header">
+                    <span>Как происходит погружение?</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="accordion__content">
+                    <p>Вы получаете доступ к платформе, где каждый модуль разбит на микро-шаги. Подключение занимает 2
+                        минуты, а первый результат виден через час.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <span>Нужен ли опыт в IT?</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="accordion__content">
+                    <p>Нет. Наша программа построена по принципу «инновации на пальцах». Легко разобраться без опыта
+                        благодаря экспертной поддержке на всех этапах.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <span>Какие перспективы после курса?</span>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+                <div class="accordion__content">
+                    <p>Вы построите карьеру, которая работает на вас, внедрив в свою работу AI-инструменты и современные
+                        методологии управления.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="contact__box reveal">
+            <h2 class="section__title">Связаться с нами</h2>
+            <form id="contact-form" class="form">
+                <div class="form__group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="phone" name="phone" placeholder="Телефон (только цифры)" required>
+                </div>
+                <div class="form__captcha">
+                    <label id="captcha-label">Сколько будет 5 + 3?</label>
+                    <input type="number" id="captcha-input" placeholder="Ответ" required>
+                </div>
+                <div class="form__checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                <div id="form-status" class="form__status"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__text">Kymon<span class="logo__accent">Flux</span></span>
       </a>
-    </p>
+      <p class="footer__description">
+        Переосмыслите подход к развитию. Образовательная платформа года, превращающая сложные технологии в понятные
+        инструменты.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__links">
+        <li><a href="#about">О платформе</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#innovations">Инновации</a></li>
+        <li><a href="#education">Обучение</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="cookies.html">Cookie Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+<li><a href="return.html">Return Policy</a></li>
+<li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Via Dante, 14, 20121 Milano MI, Italy</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+39021234567">+39 02 1234 567</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@kymon-flux.org">hello@kymon-flux.org</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Kymon Flux. Все права защищены. Предложение активно в странах ЕС.</p>
   </div>
 </footer>
-
-
+<div class="cookie-popup" id="cookie-popup">
+  <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+  </p>
+  <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+</div>
   </body>
 </html>
