@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kymon Flux — Образовательная платформа</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI4IiBmaWxsPSIjMTIxNDE3Ii8+PHBhdGggZD0iTTE2IDhMODI0IDEyTDE2IDE2TDggMTJMMTYgOFoiIGZpbGw9IiNENEZGMDAiLz48cGF0aCBkPSJNMTYgMTZMMjQgMjBMMTYgMjRMOCAyMEwxNiAxNloiIGZpbGw9IiNENEZGMDAiIGZpbGwtb3BhY2l0eT0iMC42Ii8+PC9zdmc+">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script type="module" crossorigin src="/kymon-flux/assets/main-B00esuyj.js"></script>
+  <link rel="stylesheet" crossorigin href="/kymon-flux/assets/main-Dnd6ME93.css">
+</head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <a href="./#hero" class="logo">
+      <span class="logo__text">Kymon<span class="logo__accent">Flux</span></span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="./#hero" class="nav__link">Главная</a></li>
+        <li><a href="./#about" class="nav__link">О платформе</a></li>
+        <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="./#education" class="nav__link">Обучение</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--secondary">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Menu">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li><a href="./#about" class="mobile-link">О платформе</a></li>
+    <li><a href="./#benefits" class="mobile-link">Преимущества</a></li>
+    <li><a href="./#innovations" class="mobile-link">Инновации</a></li>
+    <li><a href="./#education" class="mobile-link">Обучение</a></li>
+    <li><a href="./#contact" class="mobile-link btn btn--primary">Начать сейчас</a></li>
+  </ul>
+</div>
+
+<main>
+  <section class="pages">
+    <div class="container">
+      <h1 class="reveal">Отказ от ответственности (Дисклеймер)</h1>
+
+      <div class="pages__content reveal">
+        <p>
+          <strong>Общая информация:</strong> Все материалы, курсы и сведения,
+          опубликованные на платформе <strong>Kymon Flux</strong>, носят исключительно
+          информационно-ознакомительный и образовательный характер. Они не являются и не должны
+          рассматриваться как персональная инвестиционная рекомендация,
+          финансовый совет, юридическая консультация или публичная оферта.
+        </p>
+
+        <p>
+          <strong>Отсутствие гарантий:</strong> Мы стремимся предоставлять самую актуальную информацию в сфере
+          технологий и AI, однако не даем никаких гарантий
+          относительно точности, полноты или применимости представленных методик в каждом конкретном случае. Любые
+          упоминания потенциального дохода, карьерного роста или прошлых
+          результатов наших студентов не гарантируют аналогичных результатов в будущем.
+        </p>
+
+        <p>
+          <strong>Ограничение ответственности:</strong> Администрация Kymon Flux,
+          ее владельцы и аффилированные лица не несут ответственности за
+          любые прямые или косвенные убытки, решения или действия,
+          предпринятые вами на основе информации с этого ресурса. Вся
+          ответственность за использование стратегий, инструментов и материалов
+          лежит исключительно на пользователе.
+        </p>
+
+        <p>
+          <strong>Предупреждение о рисках:</strong> Работа в сфере высоких технологий, инноваций и финансовых
+          инструментов сопряжена с определенными рисками. Перед принятием
+          любых профессиональных или финансовых решений на основе материалов платформы, мы настоятельно рекомендуем
+          провести
+          собственное исследование и проконсультироваться с профильными специалистами.
+        </p>
+
+        <p>
+          <strong>Подтверждение пользователя:</strong> Продолжая использовать
+          платформу Kymon Flux, вы подтверждаете, что вам исполнилось 18 лет, вы
+          действуете по собственной воле и полностью принимаете условия данного отказа от ответственности, актуальные
+          для стран ЕС и Италии в частности.
+        </p>
+
+        <div class="pages__footer-info">
+          <p>По всем вопросам: <a href="mailto:support@zelux-build.org" class="pages__link">support@zelux-build.org</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="./#hero" class="logo footer__logo">
+        <span class="logo__text">Kymon<span class="logo__accent">Flux</span></span>
+      </a>
+      <p class="footer__description">
+        Переосмыслите подход к развитию. Образовательная платформа года, превращающая сложные технологии в понятные
+        инструменты.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__links">
+        <li><a href="./#about">О платформе</a></li>
+        <li><a href="./#benefits">Преимущества</a></li>
+        <li><a href="./#innovations">Инновации</a></li>
+        <li><a href="./#education">Обучение</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+<li><a href="./privacy.html">Privacy Policy</a></li>
+<li><a href="./cookies.html">Cookie Policy</a></li>
+<li><a href="./terms.html">Terms of Service</a></li>
+<li><a href="./return.html">Return Policy</a></li>
+<li><a href="./disclaimer.html">Disclaimer</a></li>
+<li><a href="./personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Via Dante, 14, 20121 Milano MI, Italy</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+39021234567">+39 02 1234 567</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@kymon-flux.org">hello@kymon-flux.org</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Kymon Flux. Все права защищены. Предложение активно в странах ЕС.</p>
+  </div>
+</footer>
+<div class="cookie-popup" id="cookie-popup">
+  <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+      политике</a>.
+  </p>
+  <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+</div>
+</body>
+
+</html>
